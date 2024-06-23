@@ -40,7 +40,10 @@ public class DPSCommand implements TabExecutor {
     }
 
     @Override
-    public @Nullable List<String> onTabComplete(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
+    public @Nullable List<String> onTabComplete(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
+        if (strings.length == 1) {
+            return List.of("on", "off", "clear");
+        }
         return null;
     }
 
