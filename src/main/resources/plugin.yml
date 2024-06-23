@@ -1,0 +1,12 @@
+name: DPS
+version: '${project.version}'
+main: net.azisaba.dps.SpigotPlugin
+api-version: '1.20'
+
+commands:
+  dps:
+    permission: dps.command
+
+permissions:
+  dps.command:
+    default: false
